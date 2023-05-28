@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: rgb(255, 103, 80);
+}
+
+.circle1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 0px solid white;
+    animation-fill-mode: both;
+    animation: circle1_animation 3s alternate infinite;
+}
+
+.circle2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    animation-fill-mode: both;
+    animation: circle2_animation 2s alternate infinite;
+}
+
+.circle3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 0px solid white;
+}
+
+@keyframes circle1_animation {
+    0%,
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle2_animation {
+    0%,
+    40% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
