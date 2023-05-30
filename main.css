@@ -23,7 +23,7 @@ body {
     box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
     border: 0px solid white;
     animation-fill-mode: both;
-    animation: circle1_animation 3s alternate infinite;
+    animation: circle1_animation 3s alternate infinite both;
 }
 
 .circle2 {
@@ -35,7 +35,7 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     border: none;
     animation-fill-mode: both;
-    animation: circle2_animation 2s alternate infinite;
+    animation: circle2_animation 3s alternate infinite both;
 }
 
 .circle3 {
@@ -46,11 +46,12 @@ body {
     background-color: white;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
     border: 0px solid white;
+    animation: circle3_animation 3s alternate infinite both;
 }
 
 @keyframes circle1_animation {
     0%,
-    50% {
+    40% {
         transform: scale(0);
     }
     100% {
@@ -60,7 +61,17 @@ body {
 
 @keyframes circle2_animation {
     0%,
-    40% {
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle3_animation {
+    0%,
+    60% {
         transform: scale(0);
     }
     100% {
